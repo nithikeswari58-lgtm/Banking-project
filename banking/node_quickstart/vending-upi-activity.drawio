@@ -1,0 +1,92 @@
+<mxfile host="Cursor" agent="Cursor" version="22.1.0">
+  <diagram id="vending-upi" name="Buy a beverage with UPI">
+    <mxGraphModel dx="1400" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1240" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Activity diagram: buy a beverage from a smart vending machine that accepts UPI" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="900" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="laneC" value="Customer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f4ef;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=8;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="280" height="1100" as="geometry"/>
+        </mxCell>
+        <mxCell id="laneM" value="Smart vending machine" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f4ef;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=8;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="440" height="1100" as="geometry"/>
+        </mxCell>
+        <mxCell id="laneU" value="UPI payment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f4ef;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=8;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="50" width="320" height="1100" as="geometry"/>
+        </mxCell>
+        <mxCell id="cStart" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="100" width="140" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="cChoose" value="Choose a beverage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="190" width="220" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="mStock" value="Is that drink in stock?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="160" width="190" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="mSold" value="Show sold out" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="560" y="175" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="mEndSold" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="250" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mPrice" value="Show the price and a UPI QR code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="330" width="250" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="cPay" value="Scan the QR and pay in the UPI app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="470" width="220" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uApprove" value="Does the bank approve the UPI payment?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="790" y="440" width="220" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="mFail" value="Show payment failed. Do not release a drink." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="500" y="470" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="mEndFail" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="560" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mDispense" value="Release the selected drink" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="660" width="230" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="mDrop" value="Did the drink come out?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="370" y="760" width="210" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="uRefund" value="Send the amount back to the customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="780" y="780" width="240" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uEnd" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="880" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mUpdate" value="Subtract one from stock and ask the customer to take the drink" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="930" width="270" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="cTake" value="Collect the drink" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="930" width="220" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="cEnd" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1040" width="140" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="The machine releases a drink only after UPI confirms payment. If the drink does not drop, UPI returns the money." style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1170" width="1040" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" style="endArrow=block;html=1;" edge="1" parent="1" source="cStart" target="cChoose"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="cChoose" target="mStock"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="No" style="endArrow=block;html=1;" edge="1" parent="1" source="mStock" target="mSold"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=block;html=1;" edge="1" parent="1" source="mSold" target="mEndSold"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="Yes" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="mStock" target="mPrice"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="mPrice" target="cPay"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="cPay" target="uApprove"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" value="No" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="uApprove" target="mFail"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="endArrow=block;html=1;" edge="1" parent="1" source="mFail" target="mEndFail"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" value="Yes" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="uApprove" target="mDispense"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" style="endArrow=block;html=1;" edge="1" parent="1" source="mDispense" target="mDrop"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" value="No" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="mDrop" target="uRefund"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" style="endArrow=block;html=1;" edge="1" parent="1" source="uRefund" target="uEnd"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e14" value="Yes" style="endArrow=block;html=1;" edge="1" parent="1" source="mDrop" target="mUpdate"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e15" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="mUpdate" target="cTake"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e16" style="endArrow=block;html=1;" edge="1" parent="1" source="cTake" target="cEnd"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

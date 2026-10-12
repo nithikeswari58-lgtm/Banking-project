@@ -1,0 +1,126 @@
+<mxfile host="65bd71144e">
+    <diagram id="banking-usecase" name="Banking use cases">
+        <mxGraphModel dx="2938" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="820" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=16;verticalAlign=top;align=center;spacingTop=10;" value="Banking Application" vertex="1">
+                    <mxGeometry height="640" width="620" x="220" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="customer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Customer" vertex="1">
+                    <mxGeometry height="80" width="40" x="70" y="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="atm" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="ATM" vertex="1">
+                    <mxGeometry height="80" width="40" x="70" y="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="teller" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Bank Teller" vertex="1">
+                    <mxGeometry height="80" width="40" x="930" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="manager" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Bank Manager" vertex="1">
+                    <mxGeometry height="80" width="40" x="930" y="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="login" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Log in" vertex="1">
+                    <mxGeometry height="50" width="170" x="280" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="balance" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="View balance" vertex="1">
+                    <mxGeometry height="50" width="170" x="280" y="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="deposit" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Deposit funds" vertex="1">
+                    <mxGeometry height="50" width="170" x="280" y="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="withdraw" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Withdraw funds" vertex="1">
+                    <mxGeometry height="50" width="170" x="280" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="transfer" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Transfer funds" vertex="1">
+                    <mxGeometry height="50" width="170" x="280" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="history" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="View transaction history" vertex="1">
+                    <mxGeometry height="56" width="170" x="280" y="530" as="geometry"/>
+                </mxCell>
+                <mxCell id="open" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Open account" vertex="1">
+                    <mxGeometry height="50" width="190" x="560" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="viewAccount" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="View customer account" vertex="1">
+                    <mxGeometry height="56" width="190" x="560" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="approve" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Approve large transfer" vertex="1">
+                    <mxGeometry height="56" width="190" x="560" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="close" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Close account" vertex="1">
+                    <mxGeometry height="50" width="190" x="560" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="reports" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="View reports" vertex="1">
+                    <mxGeometry height="50" width="190" x="560" y="550" as="geometry"/>
+                </mxCell>
+                <mxCell id="c-login" edge="1" parent="1" source="customer" style="endArrow=none;html=1;strokeColor=#6c8ebf;" target="login">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="c-balance" edge="1" parent="1" source="customer" style="endArrow=none;html=1;strokeColor=#6c8ebf;" target="balance">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="c-deposit" edge="1" parent="1" source="customer" style="endArrow=none;html=1;strokeColor=#6c8ebf;" target="deposit">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="c-withdraw" edge="1" parent="1" source="customer" style="endArrow=none;html=1;strokeColor=#6c8ebf;" target="withdraw">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="c-transfer" edge="1" parent="1" source="customer" style="endArrow=none;html=1;strokeColor=#6c8ebf;" target="transfer">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="c-history" edge="1" parent="1" source="customer" style="endArrow=none;html=1;strokeColor=#6c8ebf;" target="history">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a-login" edge="1" parent="1" source="atm" style="endArrow=none;html=1;strokeColor=#82b366;" target="login">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a-balance" edge="1" parent="1" source="atm" style="endArrow=none;html=1;strokeColor=#82b366;" target="balance">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a-deposit" edge="1" parent="1" source="atm" style="endArrow=none;html=1;strokeColor=#82b366;" target="deposit">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="a-withdraw" edge="1" parent="1" source="atm" style="endArrow=none;html=1;strokeColor=#82b366;" target="withdraw">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="t-open" edge="1" parent="1" source="teller" style="endArrow=none;html=1;strokeColor=#9673a6;" target="open">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="t-view" edge="1" parent="1" source="teller" style="endArrow=none;html=1;strokeColor=#9673a6;" target="viewAccount">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="t-deposit" edge="1" parent="1" source="teller" style="endArrow=none;html=1;strokeColor=#9673a6;" target="deposit">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="t-withdraw" edge="1" parent="1" source="teller" style="endArrow=none;html=1;strokeColor=#9673a6;" target="withdraw">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-approve" edge="1" parent="1" source="manager" style="endArrow=none;html=1;strokeColor=#b85450;" target="approve">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-close" edge="1" parent="1" source="manager" style="endArrow=none;html=1;strokeColor=#b85450;" target="close">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-reports" edge="1" parent="1" source="manager" style="endArrow=none;html=1;strokeColor=#b85450;" target="reports">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="include" edge="1" parent="1" source="transfer" style="endArrow=open;endFill=0;dashed=1;html=1;strokeColor=#666666;fontSize=11;" target="balance" value="«include»">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="455"/>
+                            <mxPoint x="500" y="185"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="extend" edge="1" parent="1" source="approve" style="endArrow=open;endFill=0;dashed=1;html=1;strokeColor=#b85450;fontSize=11;" target="transfer" value="«extend»">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Solid line: this actor can perform the function.&#xa;«include»: Transfer funds always checks the balance.&#xa;«extend»: Approve large transfer happens only when the amount is over the limit." vertex="1">
+                    <mxGeometry height="80" width="620" x="220" y="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="kf6-XIsJfcHQJ_JWMz3M-1" parent="1" style="shape=tape;whiteSpace=wrap;html=1;" value="" vertex="1">
+                    <mxGeometry height="100" width="120" x="-440" y="1120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
